@@ -62,11 +62,13 @@ header a {
 	background-color: #CCC;
 	display: flex;
 }
-.banner .flex {
-	margin: auto 0;
+.flex {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+}
+.banner .flex {
+	margin: auto 0;
 	align-items: center;
 	justify-content: center;
 	width: 40%;
@@ -229,4 +231,32 @@ p {
 	.main {
 		padding: 0;
 	}
+}
+.courses {
+	background-color: #CCC;
+}
+.courses h2 {
+	text-align: center;
+	padding-top: 32px;
+}
+.courses .flex {
+	padding: 16px 56px;
+}
+.item {
+	padding: 16px;
+}
+.item h5 {
+	padding-top: 16px;
+	padding-left: 16px;
+}
+.item p {
+	padding-left: 16px;
+	font-weight: 300;
+}
+.course {
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+.description {
+	padding-bottom: 24px;
 }
