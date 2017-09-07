@@ -1,4 +1,52 @@
 html {
 	font-size: 16px;
 	font-family: 'Roboto', Arial, sans-serif;
+	color: #555;
+}
+header {
+	height: 64px;
+	padding: 0 24px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #F1F1F1;
+}
+header img {
+	height: 32px;
+}
+header .school-title {
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+}
+header .school-title .colmar {
+	font-weight: 500;
+}
+header .school-title .academy {
+	font-weight: 300;
+}
+header .small-menu {
+	display: none;
+}
+header a {
+	margin-left: 16px;
+	text-decoration: none;
+	color: #555;
+}
+@media only screen and (max-width: 540px) {
+	header .main-menu {
+		display: none;
+	}
+	header a {
+		margin-left: 0;
+	}
+	header {
+		display: block;
+	}
+	header .small-menu {
+		display: flex;
+		justify-content: space-between;
+		height: 100%;
+		align-items: center;
+	}
 }
