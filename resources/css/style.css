@@ -5,6 +5,10 @@ html {
 }
 body {
 	width: 100%;
+	box-sizing: border-box;
+	border-left: 2px solid #CCC;
+	border-right: 2px solid #CCC;
+	border-bottom: 2px solid #CCC;
 }
 header {
 	height: 64px;
@@ -61,11 +65,11 @@ header a {
 .banner .flex {
 	margin: auto 0;
 	display: flex;
-	direction: row;
+	flex-direction: row;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
-	width: 35%;
+	width: 40%;
 }
 .banner img {
 	width: 60%;
@@ -119,5 +123,110 @@ header a {
     .banner a {
 		font-weight: 500;
 		background-color: #999;
+	}
+}
+.main {
+	display: flex;
+	padding: 32px 0;
+}
+.sixty {
+	width: 60%;
+}
+.sixty img {
+	padding: 0 24px;
+}
+h2 {
+	font-size: 36px;
+	font-weight: 700;
+}
+h5 {
+	font-size: 24px;
+	font-weight: 500;
+}
+p {
+	font-size: 20px;
+}
+.sixty h2 {
+	padding-top: 32px;
+	padding-bottom: 24px;
+	padding-left: 24px;
+}
+.sixty span {
+	padding-left: 24px;
+}
+.sixty p {
+	padding-bottom: 32px;
+	padding-left: 24px;
+	padding-right: 24px;
+}
+.sixty img {
+	box-sizing: border-box;
+	width: 100%;
+}
+.forty {
+	width: 40%;
+	box-sizing: border-box;
+}
+.side1 {
+	width: 35%;
+	height: 35%;
+	padding: 16px;
+}
+.side2 {
+	width: 65%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.side2 a {
+	text-decoration: none;
+	font-weight: 500;
+	color: blue;
+}
+.side2 p {
+	padding: 8px 0;
+}
+.mobile1 {
+	display: none;
+}
+.orientation,
+.campus {
+	display: flex;
+	border: 1px solid #CCC;
+}
+.lecture {
+	display: flex;
+	background-color: #CCC;
+	border: 1px solid #CCC;
+}
+@media only screen and (max-width: 540px) {
+	.sixty {
+		display: none;
+	}
+	.side1 {
+		display: none;
+	}
+	.mobile1 {
+		display: block;
+		padding: 16px;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	.side2 {
+		padding-left: 32px;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	.orientation,
+	.campus,
+	.lecture {
+		flex-direction: column;
+		padding-bottom: 32px;
+	}
+	.forty {
+		width: 100%;
+	}
+	.main {
+		padding: 0;
 	}
 }
