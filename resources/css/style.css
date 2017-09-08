@@ -244,6 +244,11 @@ p {
 }
 .item {
 	padding: 16px;
+	width: 30%;
+}
+.item img {
+	max-width: 100%;
+	height: auto;
 }
 .item h5 {
 	padding-top: 16px;
@@ -259,4 +264,8 @@ p {
 }
 .description {
 	padding-bottom: 24px;
+}
+.background {
+	background-color: white;
+	height: 160px;
 }
