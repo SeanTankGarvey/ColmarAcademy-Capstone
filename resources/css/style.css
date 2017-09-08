@@ -323,6 +323,13 @@ p {
 .mobile-video {
 	display: none;
 }
+.now,
+.fisma {
+	display: flex;
+}
+.thesis .forty .fisma:first-child {
+	background-color: #CCC
+}
 @media only screen and (max-width: 540px) {
 	.mobile-video {
 		display: block;
