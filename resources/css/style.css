@@ -306,3 +306,17 @@ p {
 		padding: 16px 16px 24px 16px;
 	}
 }
+.thesis {
+	padding: 32px 0;
+}	
+.thesis h2 {
+	text-align: center;
+	padding-bottom: 32px;
+}
+.sixty video {
+	padding: 0 24px;
+	box-sizing: border-box;
+}
+.sixty h5 {
+	padding: 24px 24px 8px 24px;
+}
