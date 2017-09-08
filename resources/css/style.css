@@ -320,3 +320,19 @@ p {
 .sixty h5 {
 	padding: 24px 24px 8px 24px;
 }
+.mobile-video {
+	display: none;
+}
+@media only screen and (max-width: 540px) {
+	.mobile-video {
+		display: block;
+		padding: 0;
+	}
+	.thesis h2 {
+		padding-bottom: 16px;
+	}
+	.thesis {
+		padding-top: 32px;
+		padding-bottom: 24px;
+	}
+}
