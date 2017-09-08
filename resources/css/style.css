@@ -269,31 +269,40 @@ p {
 	background-color: white;
 	height: 160px;
 }
+.mobile {
+	display: none;
+}
+.courses .flex {
+	justify-content: center;
+}
+@media only screen and (max-width: 897px) {
+	.background {
+		overflow: hidden;
+	}
+}
 @media only screen and (max-width: 540px) {
-	.desktop {
+	.desktop,
+    .item,
+    .flex	{
 		display: none;
 	}
-	.background {
-		background-color: white;
-		height: 8px;
+	.container {
+		margin: 16px 16px 32px 16px;
+	}
+	.courses .background {
+		background-color: #CCC;
+		margin-bottom: 8px;
+		height: 60px;
 	}
 	.courses {
 		background-color: #FFF;
-		margin: 16px 16px 32px 16px;
-	}
-	.courses .flex {
-		padding: 16px 0 0 0;
-		width: 100%;
-		display: block;
-	}
-	.item {
-		width: 90%;
 	}
 	.mobile {
 		display: block; 
+	}
+	.title {
 		width: 100%;
 		box-sizing: border-box;
-		background-color: #CCC;
 		padding: 16px 16px 24px 16px;
 	}
 }
