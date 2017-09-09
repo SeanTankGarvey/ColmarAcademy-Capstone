@@ -7,9 +7,9 @@ html {
 body {
 	width: 100%;
 	box-sizing: border-box;
-	border-left: 2px solid #CCC;
-	border-right: 2px solid #CCC;
-	border-bottom: 2px solid #CCC;
+	border-left: 2px solid #AAA;
+	border-right: 2px solid #AAA;
+	border-bottom: 2px solid #AAA;
 }
 /* Styles for Header */
 header {
@@ -231,6 +231,8 @@ p {
 	.lecture {
 		flex-direction: column;
 		padding-bottom: 32px;
+		background-color: white;
+		border: none;
 	}
 	.forty {
 		width: 100%;
@@ -306,6 +308,7 @@ p {
 	}
 	.courses {
 		background-color: #FFF;
+		border-top: 1px solid #CCC;
 	}
 	.mobile {
 		display: block; 
@@ -346,14 +349,39 @@ p {
 	}
 	.thesis h2 {
 		padding-bottom: 16px;
+		border-bottom: 2px solid #CCC;
 	}
 	.thesis {
 		padding-top: 32px;
 		padding-bottom: 24px;
+		border-top: 1px solid #CCC;
 	}
 }
 /* Styles for Footer */
-
+footer {
+	padding: 16px 24px 40px 24px;
+	display: flex;
+	justify-content: space-between;
+	border-top: 1px solid #CCC;
+}
+footer a {
+	margin-left: 16px;
+	font-size: 16px;
+	text-decoration: none;
+	color: #555;
+}
+@media only screen and (max-width: 540px) {
+	footer span {
+		font-weight: 500;
+	}
+	footer nav {
+		display: none;
+	}
+	footer {
+		padding: 40px 24px 16px 24px;
+		border-top: 2px solid #CCC;
+	}
+}
 /* All Styles for Very Small Screens */
 @media only screen and (max-width: 260px) {
 	header {
