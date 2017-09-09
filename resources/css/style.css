@@ -121,6 +121,7 @@ header a {
 	display: inline-block;
     }
     .banner .flex {
+		display: block;
 		margin: 0;
 		padding: 32px 16px;
 		box-sizing: border-box;
@@ -310,8 +311,6 @@ p {
 		display: block; 
 	}
 	.title {
-		width: 100%;
-		box-sizing: border-box;
 		padding: 16px 16px 24px 16px;
 	}
 }
@@ -354,3 +353,31 @@ p {
 	}
 }
 /* Styles for Footer */
+
+/* All Styles for Very Small Screens */
+@media only screen and (max-width: 260px) {
+	header {
+		padding: 0;
+	}
+	.banner .learn {
+		font-size: 24px;
+	}
+	.banner .more {
+		font-size: 16px;
+	}
+	.side2 {
+		justify-content: left;
+		padding-left: 0;
+	}
+	.container {
+		margin: 16px 0 32px 0;
+	}
+	.courses .background {
+		height: 80px;
+		display: flex;
+		align-items: center;
+	}
+	.title {
+		font-size: 20px;
+	}
+}
