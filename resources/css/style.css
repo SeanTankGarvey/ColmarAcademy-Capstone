@@ -122,15 +122,6 @@ header a {
 	width: 100%;
 	padding: 0 24px;
 }
-.banner .sixty {
-	background-image: url("../../resources/images/banner.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	overflow: hidden;
-}
-.banner .sixty img {
-	display: none;
-}
 .banner .flex {
 	align-content: center;
 	-webkit-box-align: center;
@@ -193,6 +184,7 @@ header a {
 		padding: 0 16px;
     }
 	.banner .forty {
+		display: block;
 		height: 100%;
 	}
     .banner a {
