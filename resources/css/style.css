@@ -8,13 +8,18 @@ body {
 	width: 100%;
 	box-sizing: border-box;
 	border-left: 2px solid #AAA;
+	border-left: 0.125rem solid #AAA;
 	border-right: 2px solid #AAA;
+	border-right: 0.125rem solid #AAA;
 	border-bottom: 2px solid #AAA;
+	border-bottom: 0.125rem solid #AAA;
 }
 /* Styles for Header */
 header {
 	height: 64px;
+	height: 4rem;
 	padding: 0 24px;
+	padding: 0 1.5rem;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -28,9 +33,11 @@ header {
 }
 header img {
 	height: 32px;
+	height: 2rem;
 }
 header .school-title {
 	font-size: 18px;
+	font-size: 1.125rem;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -49,7 +56,9 @@ header .small-menu {
 }
 header a {
 	margin-left: 16px;
+	margin-left: 1rem;
 	font-size: 20px;
+	font-size: 1.25rem;
 	text-decoration: none;
 	color: #555;
 }
@@ -82,8 +91,11 @@ header a {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	padding: 32px 0;
+	padding: 2rem 0;
 }
-/* This rule applies to multiple, other sections */
+/* The following four rules apply to both the banner section and other sections, while the other rules only apply to the banner section. */
+/* This rule applies to multiple, other sections too. */
 .flex {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -95,67 +107,84 @@ header a {
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
 }
+/* This rule also applies to multiple, other sections too. */
+.forty {
+	width: 40%;
+	box-sizing: border-box;
+}
+/* This rule also applies to multiple, other sections too. */
+.sixty {
+	width: 60%;
+}
+/* This rule also applies to the Main Section too. */
+.sixty img {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0 24px;
+}
 .banner .flex {
-	margin: auto 0;
+	align-content: center;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	            -ms-grid-row-align: center;
 	        align-items: center;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	width: 40%;
+	padding-right: 72px;
+	height: 100%;
 }
-.banner img {
-	width: 60%;
-	height: auto;
-	padding: 32px 24px;
-	display: inline-block;
-}
-.banner .learn {
-	display: inline-block;
+.learn {
 	font-size: 48px;
 	font-weight: 700;
-	line-height: 1.4;
+	line-height: 1.2;
 	text-align: left;
-	width: 80%;
+	padding-top: 32px;
 }
-.banner .more {
-	display: inline-block;
+.more {
 	font-size: 24px;
 	font-weight: 500;
-	line-height: 1.6;
-	padding: 32px 0;
+	line-height: 1.4;
+	padding-top: 32px;
+	padding-bottom: 24px;
 	text-align: left;
-	width: 80%;
 }
 .banner a {
-	display: inline-block;
+	display: block;
 	text-decoration: none;
 	font-size: 20px;
 	color: white;
 	background-color: #555;
 	padding: 8px 0;
 	text-align: center;
-	width: 80%;
+	width: 100%;
+	box-sizing: border-box;
 }
 @media only screen and (max-width: 540px) {
 	.banner {
 		display: block;
+		padding-top: 0;
+		padding-bottom: 32px;
 	}
-	.banner img {
-	width: 100%;
-	height: 256px;
-	padding: 0;
-	display: inline-block;
+	.learn{
+		width: 100%;
+	}
+	.more {
+		width: 100%;
+	}
+	.banner .sixty {
+		display: block;
+		width: 100%;
+	}
+	.banner .sixty img {
+	    width: 100%;
+		height: auto;
+	    padding: 0;
     }
     .banner .flex {
 		display: block;
-		margin: 0;
-		padding: 32px 16px;
-		box-sizing: border-box;
-		width: 100%;
+		padding: 0 16px;
     }
+	.banner .forty {
+		height: 100%;
+	}
     .banner a {
 		font-weight: 500;
 		background-color: #999;
@@ -167,12 +196,6 @@ header a {
 	display: -ms-flexbox;
 	display: flex;
 	padding: 32px 0;
-}
-.sixty {
-	width: 60%;
-}
-.sixty img {
-	padding: 0 24px;
 }
 h2 {
 	font-size: 36px;
@@ -198,14 +221,6 @@ p {
 	padding-bottom: 32px;
 	padding-left: 24px;
 	padding-right: 24px;
-}
-.sixty img {
-	box-sizing: border-box;
-	width: 100%;
-}
-.forty {
-	width: 40%;
-	box-sizing: border-box;
 }
 .side1 {
 	width: 35%;
