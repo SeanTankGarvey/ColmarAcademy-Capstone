@@ -128,8 +128,8 @@ header a {
 	    -ms-flex-align: center;
 	            -ms-grid-row-align: center;
 	        align-items: center;
-	padding-right: 72px;
 	height: 100%;
+	padding-right: 72px;
 }
 .learn {
 	font-size: 48px;
@@ -137,6 +137,7 @@ header a {
 	line-height: 1.2;
 	text-align: left;
 	padding-top: 32px;
+	width: 100%;
 }
 .more {
 	font-size: 24px;
@@ -145,6 +146,7 @@ header a {
 	padding-top: 32px;
 	padding-bottom: 24px;
 	text-align: left;
+	width: 100%;
 }
 .banner a {
 	display: block;
@@ -163,12 +165,6 @@ header a {
 		padding-top: 0;
 		padding-bottom: 32px;
 	}
-	.learn{
-		width: 100%;
-	}
-	.more {
-		width: 100%;
-	}
 	.banner .sixty {
 		display: block;
 		width: 100%;
@@ -186,10 +182,27 @@ header a {
 	.banner .forty {
 		display: block;
 		height: 100%;
+		padding: 0;
 	}
     .banner a {
 		font-weight: 500;
 		background-color: #999;
+	}
+}
+/* Style for a custom breakpoint (where the primary heading overflows its container) */
+@media only screen and (min-width: 540px) and (max-width: 770px) {
+	.learn {
+		font-size: 36px;
+	}
+	.banner .flex {
+		padding-right: 16px;
+	}
+	.more {
+		font-size: 18px;
+	}
+/* This rule will make the image resize horizontally and stop shrinking vertically (between 540px and 770px in screen width) */
+	.banner .sixty img {
+		height: 100%;
 	}
 }
 /* Styles for Main Section - many of these apply to Thesis Section too */
@@ -300,6 +313,15 @@ p {
 	}
 	.main {
 		padding: 0;
+	}
+}
+/* Style for a custom breakpoint for overflowing heading(s) */
+@media only screen and (min-width: 540px) and (max-width: 610px) {
+	.side2 h5 {
+		font-size: 16px;
+	}
+	.side2 p {
+		font-size: 10px;
 	}
 }
 /* Styles for Courses Section */
