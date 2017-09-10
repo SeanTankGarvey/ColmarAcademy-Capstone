@@ -29,7 +29,6 @@ header {
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
-	background-color: #F1F1F1;
 }
 header img {
 	height: 32px;
@@ -46,10 +45,15 @@ header .school-title {
 	        align-items: center;
 }
 header .school-title .colmar {
-	font-weight: 500;
+	font-weight: 700;
+	font-size: 20px;
+	font-size: 1.25rem;
 }
 header .school-title .academy {
-	font-weight: 300;
+	font-weight: 400;
+	font-size: 20px;
+	font-size: 1.25rem;
+	color: #CCC;
 }
 header .small-menu {
 	display: none;
@@ -57,8 +61,8 @@ header .small-menu {
 header a {
 	margin-left: 16px;
 	margin-left: 1rem;
-	font-size: 20px;
-	font-size: 1.25rem;
+	font-size: 16px;
+	font-size: 1rem;
 	text-decoration: none;
 	color: #555;
 }
