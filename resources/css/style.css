@@ -551,7 +551,7 @@ footer a {
 		border-top: 0.125rem solid #CCC;
 	}
 }
-/* Even though website's minimum width is normally ~417px (when resizing the screen), with DevTools open the min-width can reduce to only 150px */
+/* Even though website's minimum width is normally 540px (when resizing the screen), with DevTools open the min-width can reduce to 150px */
 /* All Styles for Very Small Screens */
 @media only screen and (max-width: 260px) {
 	header {
