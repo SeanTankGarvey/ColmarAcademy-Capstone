@@ -75,7 +75,7 @@ text-decoration:none;
 color:#555;
 }
 
-@media only screen and max-width 540px{
+@media only screen and (max-width: 540px){
 header .main-menu {
 display:none;
 }
@@ -194,7 +194,7 @@ width:100%;
 box-sizing:border-box;
 }
 
-@media only screen and max-width 540px{
+@media only screen and (max-width: 540px){
 .banner {
 display:block;
 padding-top:0;
@@ -233,7 +233,7 @@ background-color:#999;
 }
 
 /* Style for a custom breakpoint (where the primary heading overflows its container) */
-@media only screen and min-width 540px and max-width 770px{
+@media only screen and (min-width: 540px) and (max-width: 770px){
 .learn {
 font-size:36px;
 font-size:2.25rem;
@@ -365,7 +365,7 @@ border:1px solid #CCC;
 border:.0625rem solid #CCC;
 }
 
-@media only screen and max-width 540px{
+@media only screen and (max-width: 540px){
 .sixty {
 display:none;
 }
@@ -413,7 +413,7 @@ padding:0;
 }
 
 /* Styles for a custom breakpoint for overflowing heading(s) */
-@media only screen and min-width 540px and max-width 610px{
+@media only screen and (min-width: 540px) and (max-width: 610px){
 .side2 h5 {
 font-size:16px;
 font-size:1rem;
@@ -494,13 +494,13 @@ justify-content:center;
 }
 
 /* Style for text overflowing/spilling beyond containers of flex-items when resizing */
-@media only screen and max-width 897px{
+@media only screen and (max-width: 897px){
 .background {
 overflow:hidden;
 }
 }
 
-@media only screen and max-width 540px{
+@media only screen and (max-width: 540px){
 /* This style applies to other sections as well */
 .desktop,.item,.flex {
 display:none;
@@ -572,7 +572,7 @@ display:flex;
 background-color:#CCC;
 }
 
-@media only screen and max-width 540px{
+@media only screen and (max-width: 540px){
 .mobile-video {
 display:block;
 padding:0;
@@ -618,7 +618,7 @@ text-decoration:none;
 color:#555;
 }
 
-@media only screen and max-width 540px{
+@media only screen and (max-width: 540px){
 footer span {
 font-weight:500;
 }
@@ -637,7 +637,7 @@ border-top:.125rem solid #CCC;
 
 /* Even though website's minimum width is normally 540px (when resizing the screen), with DevTools open the min-width can reduce to 150px */
 /* All Styles for Very Small Screens */
-@media only screen and max-width 260px{
+@media only screen and (max-width: 260px){
 header {
 padding:0;
 }
